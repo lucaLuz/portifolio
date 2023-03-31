@@ -1,0 +1,115 @@
+.sobre__container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+    margin: 5%;
+}
+
+
+
+.sobre__mim-image{
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+
+.sobre__cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.sobre__card{
+    background: transparent;
+    border:2px solid  var(--color-primary);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition) ;
+}
+
+.sobre__card:hover{
+    background: var(--color-primary) ;
+    border: 2px solid transparent;
+}
+
+.sobre__card:hover > h5{
+    color: var(--color-bg) ;
+}
+
+.sobre__card:hover > h3{
+    color: var(--color-bg) ;
+}
+
+.sobre__card:hover > small{
+    color: var(--color-bg) ;
+}
+
+.sobre__card:hover > .sobre__icon{
+    color: var(--color-bg) ;
+}
+
+.sobre__icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;  
+}
+
+
+
+.sobre__card h5{
+    font-size: 0.95rem;
+    color: var(--color-primary);
+}
+
+.sobre__card small{
+    font-size: 0.7rem;
+    color: var(--color-primary);
+}
+
+.sobre__content p {
+    margin: 2rem 0 2.6rem;
+    color: var(--texto);
+}
+
+
+
+/*============================================================ MEDIA QUERYES ================================================*/
+
+@media screen and (max-width:1024px) {
+    .sobre__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .sobre__mim{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .sobre__content p{
+        margin: 1rem 0 1.5rem;
+    }
+ }
+
+ /*============================================================ MEDIA QUERYES ================================================*/
+
+@media screen and (max-width:600px) {
+    .sobre__mim{
+        width: 65%;
+        margin:0 auto 3rem;
+    }
+
+    .sobre__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .sobre__content{
+        text-align: center;
+    }
+
+    .sobre__content p{
+        margin: 1.5rem 0;
+    }
+}

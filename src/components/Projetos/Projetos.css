@@ -1,0 +1,84 @@
+.portifolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 10%;
+}
+
+.portifolio__item {
+    background: var(--cards);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid var( --cards);
+    transition: var(--transition);
+}
+
+.portifolio__item:hover {
+    border-color: var(--color-primary);
+    background: var( --color-primary-variant);
+}
+
+.portifolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portifolio__item h3 {
+    font-weight: bold;
+    margin: 1.2rem 0 2rem;
+    color: var(--branco);
+}
+
+.portifolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn_card1{
+    font-weight: bold;
+    width: max-content;
+    display: inline-block;
+    color: var(--amarelo);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--amarelo);
+    background: var(--cards);
+    transition: var(--transition);
+}
+
+.btn_card1:hover{
+    background: var(--cards);
+    border: 2px solid transparent;
+}
+
+.btn-card2{
+    font-weight: bold;
+    width: max-content;
+    display: inline-block;
+    color: var(--cards);
+    background: var(--amarelo);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--amarelo);
+    transition: var(--transition);
+}
+/*============================================================ MEDIA QUERYES ================================================*/
+
+@media screen and (max-width:1024px) {
+    .portifolio__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/*============================================================ MEDIA QUERYES ================================================*/
+
+@media screen and (max-width:600px) {
+    .portifolio__container{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+}

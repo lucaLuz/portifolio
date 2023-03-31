@@ -1,0 +1,112 @@
+header {
+    height: 100%;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+
+
+h1,
+h3{
+    color: var(--texto);
+}
+
+
+
+#inicio {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    /* margin-right: 50px; */
+    gap: 15%;
+    align-items: center;
+    margin: 0 30%;
+    flex-direction: column;
+}
+
+.conteudo{
+    display: flex;
+}
+
+.conteudo__text {
+    text-align: center;
+}
+
+.conteudo__text h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* =========================================== CTA  ======================================= */
+
+.cta {
+    /* margin-top: 2.5rem; */
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin: 2.5rem 12%;
+}
+
+
+
+/* =========================================== HeaderSocials ======================================= */
+
+.inicio__socials {
+    display: flex;
+    justify-content: center;
+}
+
+.inicio__socials a {
+    margin: 10px;
+    width: 2.5rem;
+}
+
+/* =========================================== ME  ======================================= */
+.eu {
+    aspect-ratio: 1/1;
+    border-radius: 999rem;
+    width: 160px;
+    background: #E87B6C;
+    display: grid;
+    place-items: center;
+}
+
+
+.eu__pesona {
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    left: 302px;
+    top: 276px;
+}
+
+
+
+/*============================================================ MEDIA QUERYES ================================================*/
+
+@media screen and (max-width:1024px) {
+    header {
+        height: 100%;
+    }
+}
+
+/*============================================================ MEDIA QUERYES ================================================*/
+
+@media screen and (max-width:600px) {
+    header {
+        height: 100%;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
