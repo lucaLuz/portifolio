@@ -37,7 +37,7 @@ const Sobre = () => {
            Tenho formação em tecnólogo de front-end pelo SENAI e completei vários cursos de UX/UI design, 
            front-end e back-end no Alura. Tenho experiência em trabalhar com diversas tecnologias, incluindo React, 
            Angular, testes TDD, TypeScript, JavaScript, Java, jQuery, Vue.js, C#, bancos de dados SQL e MySQL e C++.
-            Atualmente estou cursando faculdade de desenvolvimento mobile e sou estagiária na empresa WAKKE como desenvolvedora
+            Atualmente estou cursando faculdade de desenvolvimento mobile e fui estagiaria na empresa WAKKE como desenvolvedora e design ux
             . Sou apaixonada por tecnologia e 
           sempre busco me atualizar e aprender novas habilidades para oferecer soluções inovadoras e eficientes para meus clientes.
           </p>
